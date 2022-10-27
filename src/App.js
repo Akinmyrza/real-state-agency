@@ -4,11 +4,13 @@ import Footer from './footer';
 import WhatsApp from './assets/svg/whatsapp';
 import Facebook from './assets/svg/facebook';
 import Instagram from './assets/svg/instagram';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './about';
-import Users from './users';
 import Home from './home';
 import Navbar from './navbar';
+import Contacts from './contacts';
+import Service from './service';
+import News from './news/news';
 
 function App() {
   return (
@@ -22,7 +24,10 @@ function App() {
           </div>
           <Routes>
             <Route path='/about' element={<About />}></Route>
-            <Route path='/users' element={<Users />}></Route>
+
+            <Route path='/news' element={<News />}></Route>
+            <Route path='/service' element={<Service />}></Route>
+            <Route path='/contacts' element={<Contacts />}></Route>
             <Route path='/' element={<Home />}></Route>
           </Routes>
         </div>
@@ -35,13 +40,13 @@ function App() {
           <Footer />
         </div>
         <div>
-          <WhatsApp width={60} height={60} />
+          <WhatsApp width={20} height={20} />
         </div>
         <div>
-          <Facebook width={60} height={60} />
+          <Facebook width={20} height={20} />
         </div>
         <div>
-          <Instagram width={60} height={60} />
+          <Instagram width={20} height={20} />
         </div>
       </header>
     </div>

@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className='navigation'>
       <a href='/' className='brand-name'>
-        MacroSoft
+        агентство недвижимости
       </a>
       <button className='hamburger'>
         {/* icon from heroicons.com */}
@@ -30,7 +30,16 @@ export default function Navbar() {
             <a href='/about'>About</a>
           </li>
           <li>
-            <a href='/contact'>Contact</a>
+            <a href='/service'>Услуги</a>
+          </li>
+          <li>
+            <a href='/news'>Новости</a>
+          </li>
+          <li>
+            <a href='/service'>Услуги</a>
+          </li>
+          <li>
+            <a href='/contacts'>Контакты</a>
           </li>
         </ul>
       </div>
